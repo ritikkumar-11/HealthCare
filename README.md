@@ -149,6 +149,5 @@ This is a Django Rest Framework-based API for managing patients, doctors, and th
  ![Screenshot from 2025-04-02 19-17-39](https://github.com/user-attachments/assets/a083ed58-e768-4eba-b5bb-31ee6fcda1f8)
 
 
-## License
-This project is licensed under the MIT License.
+
 
