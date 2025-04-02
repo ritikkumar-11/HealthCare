@@ -60,8 +60,9 @@ This is a Django Rest Framework-based API for managing patients, doctors, and th
 - **Retrieve all patients**
   - `GET /api/patients/`
   - **Use:** Get all patients created by the authenticated user.
+  ![Screenshot from 2025-04-02 18-22-54](https://github.com/user-attachments/assets/142a2eec-016e-46a3-9021-ab477702e52b)
+
   
-  ![Get Patients](screenshots/get_patients.png)
 
 - **Retrieve a specific patient**
   - `GET /api/patients/<id>/`
@@ -96,7 +97,8 @@ This is a Django Rest Framework-based API for managing patients, doctors, and th
   - `GET /api/doctors/`
   - **Use:** Get all doctors.
   
-  ![Get Doctors](screenshots/get_doctors.png)
+  ![Screenshot from 2025-04-02 18-23-53](https://github.com/user-attachments/assets/87348b78-894b-4b8d-9781-58738993c2ec)
+
 
 - **Retrieve a specific doctor**
   - `GET /api/doctors/<id>/`
@@ -129,13 +131,15 @@ This is a Django Rest Framework-based API for managing patients, doctors, and th
 - **Retrieve all patient-doctor mappings**
   - `GET /api/mappings/`
   - **Use:** Get all mappings of patients and doctors.
+  ![Screenshot from 2025-04-02 18-23-33](https://github.com/user-attachments/assets/451f6fff-b562-43ea-8390-9198d8a6f35f)
+
   
-  ![Get Mappings](screenshots/get_mappings.png)
 
 - **Get all doctors assigned to a specific patient**
   - `GET /api/mappings/<patient_id>/`
   - **Use:** Retrieve all doctors assigned to a particular patient.
-  
+  ![Screenshot from 2025-04-02 18-43-12](https://github.com/user-attachments/assets/185b8696-ce43-46d5-9392-71b4439966d7)
+
   
 
 - **Remove a doctor from a patient**
