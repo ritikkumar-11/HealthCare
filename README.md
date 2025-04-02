@@ -40,14 +40,16 @@ This is a Django Rest Framework-based API for managing patients, doctors, and th
 - **Register a new user**
   - `POST /api/auth/register/`
   - **Use:** Register a new user with name, email, and password.
+  ![Screenshot from 2025-04-02 20-12-00](https://github.com/user-attachments/assets/d1a642b8-16ff-4800-b99a-e719a536c262)
+
   
-  ![Register Screenshot](screenshots/register.png)
 
 - **User Login**
   - `POST /api/auth/login/`
   - **Use:** Log in a user and return a JWT token.
+  ![Screenshot from 2025-04-02 20-12-16](https://github.com/user-attachments/assets/ff6a75f6-d802-4956-b3f2-61549bbd03e3)
+
   
-  ![Login Screenshot](screenshots/login.png)
 
 ### 2. Patient Management APIs
 - **Create a new patient**
@@ -125,8 +127,9 @@ This is a Django Rest Framework-based API for managing patients, doctors, and th
 - **Assign a doctor to a patient**
   - `POST /api/mappings/`
   - **Use:** Assign a doctor to a patient.
-  
-  ![Assign Doctor](screenshots/assign_doctor.png)
+  ![Screenshot from 2025-04-02 20-12-00](https://github.com/user-attachments/assets/de4239ea-5a18-4ea5-8bd7-447d98c01e53)
+
+
 
 - **Retrieve all patient-doctor mappings**
   - `GET /api/mappings/`
