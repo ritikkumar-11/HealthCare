@@ -53,8 +53,9 @@ This is a Django Rest Framework-based API for managing patients, doctors, and th
 - **Create a new patient**
   - `POST /api/patients/`
   - **Use:** Add a new patient (Authenticated users only).
+  ![Screenshot from 2025-04-02 18-28-33](https://github.com/user-attachments/assets/00ff246c-ef1f-4a33-9117-065258b88eeb)
+
   
-  ![Create Patient](screenshots/create_patient.png)
 
 - **Retrieve all patients**
   - `GET /api/patients/`
@@ -72,13 +73,15 @@ This is a Django Rest Framework-based API for managing patients, doctors, and th
   - `PUT /api/patients/<id>/`
   - **Use:** Update patient details.
   
-  ![Update Patient](screenshots/update_patient.png)
+ ![Screenshot from 2025-04-02 18-37-37](https://github.com/user-attachments/assets/76b39b17-f04f-4d65-b71d-0af4ba6526f1)
+
 
 - **Delete a patient**
   - `DELETE /api/patients/<id>/`
   - **Use:** Delete a patient record.
   
-  ![Delete Patient](screenshots/delete_patient.png)
+![Screenshot from 2025-04-02 18-38-06](https://github.com/user-attachments/assets/423f7c36-e1ca-482d-a85b-b54a571d0b03)
+
 
 ### 3. Doctor Management APIs
 - **Create a new doctor**
@@ -96,20 +99,23 @@ This is a Django Rest Framework-based API for managing patients, doctors, and th
 - **Retrieve a specific doctor**
   - `GET /api/doctors/<id>/`
   - **Use:** Get details of a specific doctor.
+  ![Screenshot from 2025-04-02 18-38-59](https://github.com/user-attachments/assets/8f2701ea-26e2-4f76-b9ec-c6fc33b2655b)
+
   
-  ![Get Doctor](screenshots/get_doctor.png)
 
 - **Update a doctor**
   - `PUT /api/doctors/<id>/`
   - **Use:** Update doctor details.
-  
-  ![Update Doctor](screenshots/update_doctor.png)
+  ![Screenshot from 2025-04-02 18-40-18](https://github.com/user-attachments/assets/84ef1fcb-8910-446a-9e36-b041905bf149)
+
+  )
 
 - **Delete a doctor**
   - `DELETE /api/doctors/<id>/`
   - **Use:** Delete a doctor record.
   
-  ![Delete Doctor](screenshots/delete_doctor.png)
+  ![Screenshot from 2025-04-02 18-40-35](https://github.com/user-attachments/assets/cc12b0db-974b-4382-a3dc-98e557fe915e)
+
 
 ### 4. Patient-Doctor Mapping APIs
 - **Assign a doctor to a patient**
@@ -128,7 +134,7 @@ This is a Django Rest Framework-based API for managing patients, doctors, and th
   - `GET /api/mappings/<patient_id>/`
   - **Use:** Retrieve all doctors assigned to a particular patient.
   
-  ![Get Patient Doctors](screenshots/get_patient_doctors.png)
+  
 
 - **Remove a doctor from a patient**
   - `DELETE /api/mappings/<id>/`
