@@ -67,7 +67,8 @@ This is a Django Rest Framework-based API for managing patients, doctors, and th
   - `GET /api/patients/<id>/`
   - **Use:** Get details of a specific patient.
   
-  ![Get Patient](screenshots/get_patient.png)
+  ![Screenshot from 2025-04-02 18-24-43](https://github.com/user-attachments/assets/6b45a2ab-3055-438f-81f5-49eec737cc87)
+
 
 - **Update a patient**
   - `PUT /api/patients/<id>/`
@@ -88,7 +89,8 @@ This is a Django Rest Framework-based API for managing patients, doctors, and th
   - `POST /api/doctors/`
   - **Use:** Add a new doctor (Authenticated users only).
   
-  ![Create Doctor](screenshots/create_doctor.png)
+ ![Screenshot from 2025-04-02 18-26-00](https://github.com/user-attachments/assets/4ef8c951-9adc-4b87-8392-37e06adf2c59)
+
 
 - **Retrieve all doctors**
   - `GET /api/doctors/`
