@@ -2,7 +2,7 @@ from rest_framework import viewsets, status
 from rest_framework.response import Response
 from patient.models import Patient
 from doctor.models import Doctor  # Corrected import
-from .serializers import PatientDoctorMappingSerializer
+# from .serializers import PatientDoctorMappingSerializer
 
 class PatientDoctorMappingViewSet(viewsets.ViewSet):
     def create(self, request):  # Assign a doctor to a patient
