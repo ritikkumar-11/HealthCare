@@ -4,6 +4,7 @@ from patient.models import Patient
 from doctor.models import Doctor  # Corrected import
 # from .serializers import PatientDoctorMappingSerializer
 
+ # in this we have not used serializer, we directly getting the parameter from the user using request and then we performing the crud 
 class PatientDoctorMappingViewSet(viewsets.ViewSet):
     def create(self, request):  # Assign a doctor to a patient
         patient_id = request.data.get("patient_id")
@@ -20,7 +21,7 @@ class PatientDoctorMappingViewSet(viewsets.ViewSet):
             return Response({"error": "Doctor not found"}, status=status.HTTP_404_NOT_FOUND)
 
     def list(self, request):  # Get all mappings
-        patients = Patient.objects.prefetch_related('doctor').all()
+        patients = Patient.objects.prefetch_related('doctor').all()# this query is used to fetch the doctor related to every patient
         data = [
             {
                 "patient_id": patient.id,
@@ -29,9 +30,9 @@ class PatientDoctorMappingViewSet(viewsets.ViewSet):
             }
             for patient in patients
         ]
-        return Response(data, status=status.HTTP_200_OK)
+        return Response(data, status=status.HTTP_200_OK) # is used to send an HTTP response back to the client.
 
-    def retrieve(self, request, pk=None):  # Get doctors for a specific patient
+    def retrieve(self, request, pk=None):  
         try:
             patient = Patient.objects.prefetch_related('doctor').get(id=pk)
             doctor_names = [doctor.name for doctor in patient.doctor.all()]

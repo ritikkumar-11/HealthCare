@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from .serializers import RegisterSerializer
 
-class RegisterView(generics.CreateAPIView):
+class RegisterView(generics.CreateAPIView): # used CreateAPIview beacuse it only allow the POST, so exposed api end point like list or delete
     """
     API endpoint for user registration.
     """
@@ -27,5 +27,6 @@ class LoginView(TokenObtainPairView):
     pass
 
 # Token Refresh View (for renewing JWT)
-class TokenRefreshView(TokenRefreshView):
+class RefreshTokenView(TokenRefreshView):
     pass
+
